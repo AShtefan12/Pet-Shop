@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="submit" prefHeight="530.0" prefWidth="880.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="petshop.AddAnimal.AddAnimalController">
+    <stylesheets>
+        <URL value="@addanimal.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="givenName" layoutX="40.0" layoutY="71.0" prefHeight="76.0" prefWidth="209.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="14.0" prefHeight="76.0" prefWidth="209.0" text="Insert given name ">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="696.0" layoutY="435.0" mnemonicParsing="false" onAction="#AddAnimal" prefHeight="48.0" prefWidth="109.0" text="Submit" />
+      <TextField fx:id="commonName" layoutX="40.0" layoutY="258.0" prefHeight="76.0" prefWidth="209.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="191.0" prefHeight="76.0" prefWidth="209.0" text="Insert common name">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="petPrice" layoutX="40.0" layoutY="421.0" prefHeight="76.0" prefWidth="209.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="357.0" prefHeight="76.0" prefWidth="209.0" text="Insert price">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="petSex" layoutX="343.0" layoutY="71.0" prefHeight="76.0" prefWidth="209.0" />
+      <Label alignment="CENTER" layoutX="343.0" layoutY="14.0" prefHeight="76.0" prefWidth="209.0" text="Insert sex ">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="petColor" layoutX="343.0" layoutY="258.0" prefHeight="76.0" prefWidth="209.0" />
+      <Label alignment="CENTER" layoutX="343.0" layoutY="191.0" prefHeight="76.0" prefWidth="209.0" text="Insert main color">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="357.0" prefHeight="76.0" prefWidth="209.0" text="Insert arrival date">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="arrivalDate" layoutX="356.0" layoutY="421.0" prefHeight="76.0" prefWidth="184.0" />
+      <DatePicker fx:id="soldDate" layoutX="628.0" layoutY="71.0" prefHeight="76.0" prefWidth="184.0" />
+      <Label alignment="CENTER" layoutX="616.0" layoutY="14.0" prefHeight="76.0" prefWidth="209.0" text="Insert sold date">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
